@@ -4,7 +4,7 @@ using namespace std;
 #define pb push_back
 #define mk make_pair
 #define all(v) v.begin(),v.end()
-#define int long long int
+#define int long long int 
 #define F first
 #define S second
 #define tagh2(j) j>>1
