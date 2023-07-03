@@ -4,7 +4,7 @@
 typedef long long ll;
 typedef std::pair<int, int> pii;
 typedef std::pair<ll , ll > pll;
-using namespace std;
+using namespace std; 
 
 #define int ll
 
