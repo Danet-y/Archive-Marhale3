@@ -12,6 +12,8 @@ using namespace std;
 const int N=1e6+23,MX=2e4+23,mod=10289;
 int ans;
 int divi[N],res[N];
+vector<int> vc;
+int cn=0,cn2 = 0;
 int pwe(int j,int p) {int ret=1;for(;p;p>>=1,j=1LL *j * j%mod) if(p&1) ret=1LL  * ret  * j % mod;return ret;}
 void modplus(int &j,int y){(j+=y)>=mod && (j-=mod);}
 bool isprime(int n){bool fl = 1;for (int i = 2; i <= sqrt(n)+1; i++){if(n%i==0){fl = 0;break;}}return fl;}
@@ -25,8 +27,6 @@ int cal(vector<int> arr1,vector<int> v,int sz){return memcmp(arr1.data(), v.data
 void built(){for (int i=2; i < 40001; i++)for(int j=1; j<=i; j++) if (i%j == 0) divi[i]++;}
 int taghs[N];
 void solve(int n){for (int i = 0; i < n; i++){cn = (upper_bound(res, res+vc.size(),i+1)-res);cn2 = (cn*res[cn-1]);cn = cn2*cn2;ans = (ans+cn)%mod;}}
-vector<int> vc;
-int cn=0,cn2 = 0;
 int32_t main() 
 {
 	bool fl = 0;
