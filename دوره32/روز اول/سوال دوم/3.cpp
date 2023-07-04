@@ -16,6 +16,8 @@ int fac[N];
 int inv[N];
 int di[N];
 int dp[N];
+int n= 1401401,m = 202022;
+vector<int> seen(N);
 int pwe(int a, int b, int md = mod){int res = 1; while(b){if(b&1){res=(a*res)%md;}a=(a*a)%md;b>>=1;}return(res);}
 void modplus(int &j,int y){(j+=y)>=mod && (j-=mod);}
 bool seenprime(int n){bool fl = 1;for (int i = 2; i <= sqrt(n)+1; i++){if(n%i==0){fl = 0;break;}}return fl;}
@@ -29,8 +31,7 @@ int C(int n,int r){return fac[n] * inv[r] % mod * inv[n-r] % mod;}
 void dfs(int v,int p = -1) {if(adj[v].size() == 1){dp[v] = 1;return;}if(seen[v]) dp[v] = 0; else dp[v] = 1;for(int u : adj[v]) {if(u == p) continue;dfs(u,v);if(seen[v]) {dp[v] += dp[u];} else{ dp[v] *= dp[u];}dp[v]=dp[v]%mod;}}
 void build(){fac[0] = 1; inv[0] = pwe(fac[0],mod-2);for(int i = 1 ; i< N ; i ++) {fac[i] = (fac[i-1] * i)%mod;inv[i] = pwe(fac[i],mod-2);}}
 int cal(vector<int> arr1,vector<int> v,int sz){return memcmp(arr1.data(), v.data(), sz * sizeof(v[0])) == 0;}
-int n= 1401401,m = 202022;
-vector<int> seen(N);
+
 int32_t main() 
 {
 	freopen("tree.in", "r", stdin);
