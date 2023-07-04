@@ -9,4 +9,4 @@
 
  note3: سوال دو دوره 32 فایل ورودی دارد
 
-## Tnx to  - amiralih1 AND deglado for Helping some codes
+## Tnx to  - AmirAliH1 AND Deglado for Helping some codes
