@@ -3,10 +3,10 @@
 
 
 
-note: دوره 26 روز دوم سوال 2 حل نشده است
+#note: دوره 26 روز دوم سوال 2 حل نشده است
 
-note2: دوره 29 حل نشده است
+#note2: دوره 29 حل نشده است
 
-note3: سوال دو دوره 32 فایل ورودی دارد
+#note3: سوال دو دوره 32 فایل ورودی دارد
 
-Tnx to  - amiralih1 AND deglado for Helping some codes
+##Tnx to  - amiralih1 AND deglado for Helping some codes
