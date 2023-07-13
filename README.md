@@ -8,5 +8,5 @@
  note2: دوره 29و32 روز دوم حل نشده است
 
  note3: سوال دو دوره 32 فایل ورودی دارد
-
+ 
 ## Tnx to  - AmirAliH1 AND Deglado for Helping some codes
